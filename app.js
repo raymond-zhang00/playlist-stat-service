@@ -10,10 +10,10 @@ const PORT = 5000;
 // Connect to database
 //connectDB();
 
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, "client/build")));
 
 app.get("/api", (req, res) => {res.send("Playlist Statistics API Page")});
-app.use(require("./routes/person-image"))
+app.use(require("./routes/person-image"));
 
 app.post("/search", (req, res) => {
 
