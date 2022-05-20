@@ -5,7 +5,7 @@ const app = express();
 const path = require('path');
 //const connectDB = require("./config/connectdb");
 
-const PORT = 5000;
+const PORT = 3000;
 
 // Connect to database
 //connectDB();

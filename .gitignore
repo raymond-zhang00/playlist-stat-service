@@ -1,5 +1,11 @@
 # Ignore node modules
 /node_modules
 
+# Ignore client node modules
+/client/node_modules
+
 # Keep config info local
 /config/config.*
+
+# Ignore mac files
+.DS_Store
