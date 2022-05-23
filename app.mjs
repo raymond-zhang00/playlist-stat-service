@@ -3,10 +3,11 @@ import express from 'express';
 import "dotenv/config";
 import path from 'path';
 import { fileURLToPath } from 'url';
-import personImage from './routes/person-image.js'
-import playlistSearch from './routes/playlist-search.js'
-import getPlaylist from './routes/get-playlist.js'
-import getTracks from './routes/get-tracks.js'
+import personImage from './routes/person-image.js';
+import playlistSearch from './routes/playlist-search.js';
+import getPlaylist from './routes/get-playlist.js';
+import getTracks from './routes/get-tracks.js';
+import getExercise from './routes/get-exercise.js';
 
 const app = express();
 
@@ -21,6 +22,7 @@ app.use(personImage);
 app.use(playlistSearch);
 app.use(getPlaylist);
 app.use(getTracks);
+app.use(getExercise);
 
 app.post("/search", (req, res) => {
 
