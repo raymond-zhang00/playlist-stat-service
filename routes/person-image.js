@@ -1,6 +1,6 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const axios = require("axios");
+import axios from "axios";
 
 const personUrl = 'https://this-person-does-not-exist.com/';
 const re = new RegExp('img/avatar-(.*?).jpg');
@@ -31,4 +31,4 @@ router.get("/api/person-image", (req, res) => {
         });
 })
 
-module.exports = router;
+export default router;

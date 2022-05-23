@@ -6,6 +6,7 @@
 
 # Keep config info local
 /config/config.*
+.env
 
 # Ignore mac files
 .DS_Store
