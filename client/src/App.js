@@ -7,7 +7,7 @@ import PlaylistPage from './pages/Playlist';
 
 function App() {
   return (
-    <div class="app">
+    <div className="app">
       <BrowserRouter>
         <header className="app-header">
           <NavBar />

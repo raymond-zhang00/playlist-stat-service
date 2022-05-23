@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <nav class="navbar">
+        <nav className="navbar">
             <div>Playlist Statistics</div>
             <ul>
                 <li><Link to="/">Home</Link></li>

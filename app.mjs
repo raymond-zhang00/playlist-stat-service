@@ -5,6 +5,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import personImage from './routes/person-image.js'
 import playlistSearch from './routes/playlist-search.js'
+import getPlaylist from './routes/get-playlist.js'
+import getTracks from './routes/get-tracks.js'
 
 const app = express();
 
@@ -17,6 +19,8 @@ app.use(express.static(path.join(__dirname, "client/build")));
 app.get("/api", (req, res) => {res.send("Playlist Statistics API Page")});
 app.use(personImage);
 app.use(playlistSearch);
+app.use(getPlaylist);
+app.use(getTracks);
 
 app.post("/search", (req, res) => {
 

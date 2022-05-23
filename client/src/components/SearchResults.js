@@ -1,12 +1,12 @@
 import React from 'react';
 import SearchResultRow from './SearchResultRow';
-import results from '../data/testresults';
+//import results from '../data/testresults';
 
-function SearchResults() {
+function SearchResults({playlistList}) {
     return (
         <div className="search-results">
             <ul className="search-list">
-                {results.map((result) => <SearchResultRow result={result} />)}
+                {playlistList.map((playlist) => <SearchResultRow playlist={playlist} />)}
             </ul>
         </div>
     );
