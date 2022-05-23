@@ -14,15 +14,15 @@ npm install
 
 ## Usage
 
-Run npm start to start the service on localhost:5000
+Run npm start to start the service on localhost:3000
 
 ```bash
 npm start
 ```
 
-The site will then be accessible on http://localhost:5000
+The site will then be accessible on http://localhost:3000
 
-The playlist API will be accessible on http://localhost:5000/api/person-image
+The playlist API will be accessible on http://localhost:3000/api/person-image
 
 ### <To do - add api documentation>
 
